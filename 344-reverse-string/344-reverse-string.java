@@ -1,6 +1,13 @@
-/**
- Do not return anything, modify s in-place instead.
- */
-function reverseString(s: string[]): void {
-    s.reverse();
-};
+class Solution {
+    public void reverseString(char[] s) {
+        int low = 0;
+        int high = s.length - 1;
+        while(low < high){
+            char ch = s[low];
+            s[low] = s[high];
+            s[high] = ch;
+            low++;
+            high--;
+        }
+    }
+}
