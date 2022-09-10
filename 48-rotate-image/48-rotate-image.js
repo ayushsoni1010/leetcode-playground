@@ -3,9 +3,6 @@
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
 var rotate = function(matrix) {
-    let temp = [];
-    let arr = [];
-    
     for(let i=0;i<matrix.length;i++){
         for(let j=i; j<matrix[0].length;j++){
           let temp = matrix[i][j];
